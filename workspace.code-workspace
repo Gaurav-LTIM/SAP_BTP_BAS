@@ -1,0 +1,39 @@
+{"folders":[
+        {
+            "path": "bookshop"
+        },
+        {
+            "path": "Risks-main"
+        },
+        {
+            "name": "cpapp",
+            "path": "cpapp"
+        },
+        {
+            "path": "bookshop-2"
+        },
+        {
+            "path": "project_emp"
+        },
+        {
+            "path": "project_emp_v2"
+        },
+        {
+            "path": "bookshop/project_emp_ui"
+        },
+        {
+            "name": "project_emp_ui_2",
+            "path": "project_emp_ui_2"
+        }
+    ],
+    "settings": {
+        "sqltools.connections": [
+            {
+                "previewLimit": 50,
+                "driver": "SQLite",
+                "database": "${workspaceFolder:bookshop}/bookshop.db",
+                "name": "My Bookshop SQLite"
+            }
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+###
+GET http://localhost:4004/odata/v4/catlog/Authors?$expand=books
+
+###
+GET http://localhost:4004/odata/v4/catlog/Books
+
+
+###
+POST  http://localhost:4004/odata/v4/catlog/Authors
+Content-Type: application/json
+
+{"ID": 4711, "name":"Max Streifeneder"}
+
+
+###
+POST  http://localhost:4004/odata/v4/catlog/Books
+Content-Type: application/json
+
+{"ID": 999, "title":"java rocks","stock": 10, "author_ID":4711}

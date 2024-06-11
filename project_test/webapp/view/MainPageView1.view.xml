@@ -1,0 +1,35 @@
+<mvc:View controllerName="projecttest.controller.MainPageView1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+         <Table id="_IDGenTable1" items ="{/Employees}" mode="SingleSelectLeft">
+                <columns>
+                     <Column id="_IDGenColumn1">
+                        <Label id="_IDGenLabel1" text="ID"></Label>
+                     </Column>
+                     <Column id="_IDGenColumn2">
+                       <Label id="_IDGenLabel02" text="Name"></Label>
+                      </Column>
+                     <!-- <Column id="_IDGenColumn3">
+                        <Label id="_IDGenLabel3" text="Department"></Label>
+                     </Column> -->
+                     <Column id="_IDGenColumn4">
+                        <Label id="_IDGenLabel4" text="Email ID"></Label>
+                     </Column>
+                </columns>
+ 
+             <items>
+                  <ColumnListItem id="_IDGenColumnListItem1" type="Navigation" press=".onNavToDetails">
+                        <cells>
+                              <Text id="_IDGenText1" text = "{ID}"></Text>
+                              <Text id="_IDGenText2" text = "{name}"></Text>
+                              <!-- <Text id="_IDGenText3" text = "{Employees>department/dep_name}"></Text> -->
+                              <Text id="_IDGenText4" text = "{email_id}"></Text>
+                        </cells>
+                  </ColumnListItem>
+             </items>
+           </Table>
+      </content>
+    </Page>
+</mvc:View>

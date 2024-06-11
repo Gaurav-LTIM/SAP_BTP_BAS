@@ -1,0 +1,14 @@
+GET http://localhost:4004/odata/v4/catlog/Books
+
+### 
+POST http://localhost:4004/odata/v4/catlog/Books
+Content-Type: application/json
+
+{ "ID":10, "title": "this is my new book: Max Streifeneder" }
+
+
+###
+POST http://localhost:4004/odata/v4/catlog/Orders
+Content-Type: application/json
+
+{"ID": "f18c5cab-9b2a-4473-a4c6-feec4979e4b9","book_ID" : 421, "quantity": 10 }
